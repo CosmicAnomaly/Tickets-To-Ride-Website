@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<title>Ticket Page</title>
+
+	<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+	</head>
+	<body>
+		
+		
+<div data-role="page" id="ticketPage">	
+	<div data-role="header">
+		<h1>Ticket Page</h1>
+			<div role="main" class="ui-content">
+			<form>
+    			<input id="groupName" type="text" placeholder="Enter Group Name" />
+				<span id="group_error">*</span>
+				<br>
+				<br>
+				<label for="ticketSlider">Select Ticket Type(All Day Pass or Per Ride)</label>
+				<select name="ticketSlider" id="ticketSlider" data-role="slider">
+					<option value="0">Ride</option>
+				    <option value="1">All Day</option>
+				</select>
+				<span id="ticket_error">*</span>
+				<br>
+				<br>
+    			<input id="numTickets" type="text" placeholder="Enter Number of Tickets"/>
+				<span id="ticket_error">*</span>
+				<br>
+				<br>
+				<label for="paymentSlider">Select Payment Type</label>
+    			<select name="paymentSlider" id="paymentSlider" data-role="slider" >
+					<option value="0">Cash</option>
+				    <option value="1">Check</option>
+				</select>
+				<span id="pay_error">*</span><br>
+				<br>
+				<label for="ageSlider">Select Age Group(Under 12 or 13+)</label>
+				
+				<select name="ageSlider" id="ageSlider" data-role="slider">
+				    <option value="0">Under 12</option>
+				    <option value="1">13+</option>
+				</select>
+				<span id="age_error">*</span><br>
+				<br>
+				<input id="btnSubmit" type="button" value="Submit"/>
+			</form>
+			
+			<h3>12 & Under - $1 Ride Token or $18 All Day Bracelet</h3>
+			<h3>13 & over - $1.50 Ride Token or $22 All Day Bracelet</h3>
+			
+			</div>
+	</div>
+</div>
+		
+<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
+
